@@ -159,7 +159,6 @@ export const websiteData = {
           twitter: "#",
           instagram: "#",
           linkedin: "https://www.linkedin.com/in/mariano-diletto-587a83198/",
-          email: "#",
         },
       },
       {
@@ -169,10 +168,9 @@ export const websiteData = {
         image: "/staff/Juan.jpg",
         description: "Responsable del rendimiento competitivo del equipo, gestionando jugadores, entrenadores y estrategias de entrenamiento. Enfocado en scouting, análisis de desempeño y planificación deportiva para optimizar el desarrollo y éxito en torneos.",
         socialMedia: {
-          twitter: "#",
-          instagram: "#",
-          linkedin: "#",
-          email: "#",
+          twitter: "https://x.com/JuaanRP_",
+          instagram: "https://www.instagram.com/juanrpx_/",
+          linkedin: "https://www.linkedin.com/in/juan-rodriguez-0b04061a6/",
         },
       },
       {
@@ -185,7 +183,6 @@ export const websiteData = {
           twitter: "https://x.com/rodcami_",
           instagram: "https://instagram.com/rodcami_",
           linkedin: "https://www.linkedin.com/in/rodcami/",
-          email: "camilamaycam@gmail.com",
         },
       },
     ],
@@ -218,14 +215,14 @@ export const websiteData = {
       {
         id: "player1",
         name: "Juan Rodriguez",
-        nickname: "Juancito",
+        nickname: "JuaanRP_",
         gameId: "fifa",
         role: "Profesional de FIFA",
         image: "/players_photo/Juan_Rodriguez.jpg",
         description: "Jugador profesional de FIFA con más de 5 años de experiencia competitiva.",
         socialMedia: {
-          twitter: "#",
-          instagram: "#",
+          twitter: "https://x.com/JuaanRP_",
+          instagram: "https://www.instagram.com/juanrpx_/",
           twitch: "#",
         },
       },
@@ -252,8 +249,8 @@ export const websiteData = {
         image: "/players_photo/Thiago_Amari.jpg",
         description: "Jugador profesional de Sim Racing con más de 5 años de experiencia competitiva.",
         socialMedia: {
-          twitter: "#Thiago.Amari",
-          instagram: "#",
+          twitter: "https://x.com/ThiagoAmari12",
+          instagram: "https://www.instagram.com/thiago.amari/",
           twitch: "#",
         },
       },
