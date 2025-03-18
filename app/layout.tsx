@@ -10,6 +10,15 @@ import { Analytics } from "@vercel/analytics/react";
 const montserrat = Montserrat({ subsets: ["latin"], variable: "--font-montserrat" });
 const roboto = Roboto({ subsets: ["latin"], variable: "--font-roboto" });
 
+export const metadata = {
+  title: "Tu página",
+  icons: {
+    icon: "public/favicon.ico", // Favicon principal
+    apple: "public/favicon.png", // Apple Touch Icon
+  },
+};
+
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="es" suppressHydrationWarning>
