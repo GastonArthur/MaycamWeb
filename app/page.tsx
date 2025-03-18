@@ -43,6 +43,26 @@ export default function Home() {
 
     <SponsorsBar />
 
+        {/* 2. NOTICIAS SECTION */}
+        <section className="py-20 bg-black">
+        <div className="container px-4 md:px-6 mx-auto">
+          <FadeIn>
+            <div className="flex items-center mb-12">
+              <div className="h-px flex-grow bg-gradient-to-r from-transparent via-violet-600 to-transparent"></div>
+              <h2 className="text-3xl font-bold text-white mx-4 font-title flex items-center">
+                <Users className="h-6 w-6 mr-2 text-violet-500" />
+                NOTICIAS
+              </h2>
+              <div className="h-px flex-grow bg-gradient-to-r from-transparent via-violet-600 to-transparent"></div>
+            </div>
+          </FadeIn>
+
+          <script src="https://static.elfsight.com/platform/platform.js" async></script>
+          <div className="elfsight-app-622032dd-25d1-4dfd-a3b8-b9efa4fb4faa" data-elfsight-app-lazy></div>
+          </div>
+
+          </section>
+
       {/* 3. SOBRE NOSOTROS SECTION */}
       <section className="py-20 bg-black">
         <div className="container px-4 md:px-6 mx-auto">
@@ -112,7 +132,7 @@ export default function Home() {
       </section>
 
       {/* 4. STAFF SECTION */}
-      <section className="py-20">
+      <section className="py-20 bg-gradient-to-b from-black to-gray-90">
         <div className="container px-4 md:px-6 mx-auto">
           <FadeIn>
             <div className="flex items-center mb-12">
@@ -166,25 +186,6 @@ export default function Home() {
         </div>
       </section>
 
-                  {/* 5. NOTICIAS SECTION */}
-      <section className="py-20 bg-gradient-to-b from-black to-gray-900">
-        <div className="container px-4 md:px-6 mx-auto">
-          <FadeIn>
-            <div className="flex items-center mb-12">
-              <div className="h-px flex-grow bg-gradient-to-r from-transparent via-violet-600 to-transparent"></div>
-              <h2 className="text-3xl font-bold text-white mx-4 font-title flex items-center">
-                <Users className="h-6 w-6 mr-2 text-violet-500" />
-                NOTICIAS
-              </h2>
-              <div className="h-px flex-grow bg-gradient-to-r from-transparent via-violet-600 to-transparent"></div>
-            </div>
-          </FadeIn>
-
-          <script src="https://static.elfsight.com/platform/platform.js" async></script>
-          <div className="elfsight-app-622032dd-25d1-4dfd-a3b8-b9efa4fb4faa" data-elfsight-app-lazy></div>
-          </div>
-
-          </section>
 
       {/* 6. CONTACTO SECTION - Ahora al final antes del footer */}
       <ContactSection title={""} subtitle={""} buttonText={""} buttonLink={""} />
