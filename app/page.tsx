@@ -28,7 +28,7 @@ export default function Home() {
   // Usar los datos del hero si están disponibles
   const heroImages = websiteData?.hero?.backgroundImages || [
     {
-      url: "/bg_photo/home_bg3.jpg",
+      url: "/bg_photo/home_bg4.jpg",
       alt: "Maycam Evolve",
     },
     {
