@@ -6,7 +6,7 @@ const socialLinks = [
   { name: "Instagram", icon: Instagram, url: "https://instagram.com/maycamevolve" },
   { name: "X", icon: Twitter, url: "https://twitter.com/maycamevolve" },
   { name: "YouTube", icon: Youtube, url: "https://youtube.com/maycamevolve" },
-  { name: "LinkedIn", icon: Linkedin, url: "https://linkedin.com/maycamevolve" },
+  { name: "LinkedIn", icon: Linkedin, url: "https://www.linkedin.com/in/maycam-evolve-1105a1186/" },
   { name: "Facebook", icon: Facebook, url: "https://facebook.com/maycamevolve" },
   // { name: "Discord", icon: Discord, url: "https://discord.com/invite/r7qHmd6u6g" },
 ];
