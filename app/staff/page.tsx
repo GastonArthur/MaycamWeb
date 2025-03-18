@@ -15,6 +15,19 @@ export default function StaffPage() {
     staffMembers: [],
     title: "Nuestro Staff",
     description: "El equipo detrás de los jugadores",
+    socialMedia: {
+      email: "",
+      phone: "",
+      twitter: "",
+      instagram: "",
+      linkedin: "",
+    } as {
+      email?: string;
+      phone?: string;
+      twitter?: string;
+      instagram?: string;
+      linkedin?: string;
+    },
   }
   const staffMembers = staffData.staffMembers || []
   const [selectedMember, setSelectedMember] = useState<null | typeof staffMembers[0]>(null)
