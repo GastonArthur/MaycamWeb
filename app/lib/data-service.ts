@@ -1,3 +1,5 @@
+import { url } from "inspector"
+
 // Datos estáticos para la web
 export const websiteData = {
  logo: {
