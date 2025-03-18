@@ -325,7 +325,7 @@ export const websiteData = {
         description: "Por primera vez, los #Esports estuvieron presentes en la Copa Davis, representando el futuro y la innovación en el deporte. Agradecemos a la prensa por dar visibilidad al mundo del #Gaming y por destacar este gran paso para la industria.",
         tournament: "Copa Davis",
         prize: "",
-        imageUrl: "",
+        imageUrl: "/logros_photos/Logro-7.jpg",
       },
       {
         id: "achievement8",
