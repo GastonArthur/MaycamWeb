@@ -289,7 +289,7 @@ export const websiteData = {
         description: "Dijimos presente en la Argentina FlowGamergy 2023 con un impresionante stand de más de 300m². Contamos con una cancha profesional de TeqBall, gradas, una diana de penales de 6 metros, un Tateti electrónico de Fox Sports, toro mecánico, puestos de pochoclos gratis, un mini estudio de Fox Sports con transmisiones en vivo, filmmakers editando en tiempo real y muchas sorpresas junto a nuestras marcas aliadas.",
         tournament: "Argentina FlowGamergy 2023",
         prize: "",
-        imageUrl: "/logros_photos/Logro2.jpg",
+        imageUrl: "/logros_photos/Logro-3.jpg",
       },
       {
         id: "achievement4",
