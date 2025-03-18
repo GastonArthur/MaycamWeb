@@ -34,7 +34,7 @@ export default function SponsorsBar() {
                   <img
                     src={sponsor.logo}
                     alt={sponsor.name || "Sponsor"}
-                    className="h-24 w-auto object-contain filter brightness-0 invert hover:brightness-100 transition-all duration-300"
+                    className="h-24 w-auto object-contain filter brightness-0 invert hover:invert-0 hover:brightness-100 transition-all duration-300"
                     onError={(e) => {
                       e.currentTarget.src = ""
                     }}
