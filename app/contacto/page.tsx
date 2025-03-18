@@ -236,7 +236,7 @@ export default function ContactPage() {
                       <Clock className="h-5 w-5 text-violet-400 mr-3" />
                       <div>
                         <p className="text-white">Sábado</p>
-                        <p className="text-gray-400">10:00 - 14:00</p>
+                        <p className="text-gray-400">9:00 - 18:00</p>
                       </div>
                     </div>
                     <div className="flex items-center">
