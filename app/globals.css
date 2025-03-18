@@ -103,7 +103,7 @@
 
 .sponsor-slider {
   display: flex;
-  animation: scrollSponsors 35s linear infinite;
+  animation: scrollSponsors 50s linear infinite;
   width: max-content;
 }
 
