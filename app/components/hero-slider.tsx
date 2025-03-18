@@ -8,7 +8,7 @@ import { websiteData } from "@/app/lib/data-service"
 export default function HeroSlider() {
   const heroImages = websiteData?.hero?.backgroundImages || [
     {
-      url: "/bg_photo/home_bg3.jpg",
+      url: "/bg_photo/home_bg4.jpg",
       alt: "Maycam Evolve",
     },
     {
