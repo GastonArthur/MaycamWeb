@@ -330,7 +330,7 @@ export const websiteData = {
       {
         id: "achievement8",
         title: "¡Top 3 en el Mundial de Dota 2 en Arabia! 🏆🔥",
-        date: "2023-08-16",
+        date: "2023-09-16",
         description: "Nuestro equipo de Dota 2 clasificó al Mundial organizado por la Global Esports Federation en Arabia y logró un increíble 3° puesto en 2023. Un logro que nos llena de orgullo y sigue demostrando nuestro nivel en la escena internacional.",
         tournament: "Mundial de Dota 2 – Global Esports Federation 2023",
         prize: "",
@@ -366,7 +366,7 @@ export const websiteData = {
       {
         id: "achievement12",
         title: " ¡Campeones de MPL 2024 y clasificados al Mundial de MLBB! 🏆🔥",
-        date: "2024-04-05",
+        date: "2024-10-05",
         description: "En nuestro debut en Mobile Legends: Bang Bang, nos consagramos campeones de la MPL 2024, torneo presencial organizado por MOONTON GAMES. Con esta victoria, aseguramos nuestra clasificación al Mundial de MLBB en Kuala Lumpur, Malasia. ¡Vamos por más!",
         tournament: "MPL 2024 - Clasificación al Mundial de MLBB",
         prize: "",
