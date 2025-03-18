@@ -174,7 +174,7 @@ export const websiteData = {
         description: "Apasionada por el mundo digital, generando contenido atractivo y auténtico para conectar con la audiencia. Enfocada en entretenimiento, gaming y branding personal, creando videos, streams y publicaciones que potencian el engagement y el crecimiento en redes sociales.",
         socialMedia: {
           twitter: "https://x.com/rodcami",
-          instagram: "https://instagram.com/rodcami",
+          instagram: "https://instagram.com/rodcami_",
           linkedin: "https://www.linkedin.com/in/rodcami/",
           email: "camilamaycam@gmail.com",
         },
