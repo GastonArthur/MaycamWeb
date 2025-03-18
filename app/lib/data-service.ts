@@ -15,7 +15,7 @@ export const websiteData = {
     buttonUrl: "/sobre-nosotros",
     backgroundImages: [
       {
-        image: "/bg_photo/home_bg3.jpg",
+        image: "/bg_photo/home_bg4.jpg",
         alt: "Maycam Evolve",
       },
       {
