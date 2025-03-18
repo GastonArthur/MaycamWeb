@@ -1,4 +1,5 @@
 import { url } from "inspector"
+import { Linkedin } from "lucide-react"
 
 // Datos estáticos para la web
 export const websiteData = {
@@ -223,7 +224,7 @@ export const websiteData = {
         socialMedia: {
           twitter: "https://x.com/JuaanRP_",
           instagram: "https://www.instagram.com/juanrpx_/",
-          twitch: "#",
+          Linkedin: "https://www.linkedin.com/in/juan-rodriguez-0b04061a6/",
         },
       },
       {
@@ -237,7 +238,7 @@ export const websiteData = {
         socialMedia: {
           twitter: "#",
           instagram: "#",
-          twitch: "#",
+          Linkedin: "#",
         },
       },
       {
@@ -251,7 +252,7 @@ export const websiteData = {
         socialMedia: {
           twitter: "https://x.com/ThiagoAmari12",
           instagram: "https://www.instagram.com/thiago.amari/",
-          twitch: "#",
+          Linkedin: "https://www.linkedin.com/in/thiagoamari/",
         },
       },
     ],
