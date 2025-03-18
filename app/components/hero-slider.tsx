@@ -27,7 +27,7 @@ export default function HeroSlider() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % heroImages.length)
-    }, 5000)
+    }, 8000)
 
     return () => clearInterval(interval)
   }, [heroImages.length])
