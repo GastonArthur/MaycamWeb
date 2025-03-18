@@ -125,7 +125,7 @@ export const websiteData = {
       {
         id: "sponsor7",
         name: "SanIgnacio",
-        logo: "../sponsor_logo/San-ignacio.png",
+        logo: "/sponsor_logo/San-Ignacio.png",
         description: "Descripción del patrocinador 3",
         url: "#",
       },
