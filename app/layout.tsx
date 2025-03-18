@@ -5,6 +5,7 @@ import { Montserrat, Roboto } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/app/components/navbar";
 import Footer from "@/app/components/footer";
+import { Analytics } from "@vercel/analytics/react";
 
 const montserrat = Montserrat({ subsets: ["latin"], variable: "--font-montserrat" });
 const roboto = Roboto({ subsets: ["latin"], variable: "--font-roboto" });
