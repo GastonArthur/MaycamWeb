@@ -191,13 +191,13 @@ export const websiteData = {
         id: "fifa",
         name: "FIFA",
         image: "/games_photos/FIFA25.jpg",
-        description: "Nuestro equipo de FIFA compite en los torneos más prestigiosos a nivel mundial.",
+        description: "Nuestros jugadores profesionales de EA FC compiten al más alto nivel a través del circuito oficial de EA SPORTS",
       },
       {
         id: "simracing",
         name: "Simracing",
         image: "/games_photos/F1.jpg",
-        description: "Nuestro equipo de Simracing compite en los torneos más prestigiosos a nivel mundial.",
+        description: "Nuestros pilotos de Sim Racing llegan a su máxima velocidad en los campeonatos oficiales a nivel nacional e internacional",
       },
     ],
     players: [
