@@ -21,6 +21,9 @@ const nextConfig = {
     parallelServerBuildTraces: true,
     parallelServerCompiles: true,
   },
+  env: {
+    RESEND_API_KEY: process.env.local.RESEND_API_KEY,
+},
 }
 
 mergeConfig(nextConfig, userConfig)
