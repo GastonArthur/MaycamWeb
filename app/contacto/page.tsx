@@ -1,5 +1,8 @@
 "use client"
 
+import { EmailTemplate } from '../components/email-template';
+import { Resend } from 'resend';
+import * as React from 'react';
 import { useState } from "react"
 import { motion } from "framer-motion"
 import {
@@ -40,16 +43,28 @@ export default function ContactPage() {
     setIsSubmitting(true)
     setError("")
 
-    // Simulate form submission
     try {
-      await new Promise((resolve) => setTimeout(resolve, 1500))
-      setIsSubmitted(true)
-      setFormState({
-        name: "",
-        email: "",
-        subject: "",
-        message: "",
-      })
+      const response = await fetch("/api/send-email", {  // Asegúrate de que la URL sea la correcta
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formState)
+    });
+    
+
+      const result = await response.json();
+
+
+      if (result.success) {
+        setIsSubmitted(true)
+        setFormState({
+          name: "",
+          email: "",
+          subject: "",
+          message: "",
+        })
+      } else {
+        setError(result.error || "Hubo un error al enviar el formulario.");
+      }
     } catch (err) {
       setError("Hubo un error al enviar el formulario. Por favor, inténtalo de nuevo.")
     } finally {
@@ -63,8 +78,8 @@ export default function ContactPage() {
 
   const contactInfo = websiteData.contact || {
     email: "info@maycamevolve.com",
-    phone: "+54 9 11 5997 5193",
-    address: "Buenos Aires, Argentina",
+    phone: "+34 123 456 789",
+    address: "Madrid, España",
     socialMedia: {
       instagram: "https://instagram.com/maycamevolve",
       twitter: "https://twitter.com/maycamevolve",
@@ -236,7 +251,7 @@ export default function ContactPage() {
                       <Clock className="h-5 w-5 text-violet-400 mr-3" />
                       <div>
                         <p className="text-white">Sábado</p>
-                        <p className="text-gray-400">9:00 - 18:00</p>
+                        <p className="text-gray-400">10:00 - 14:00</p>
                       </div>
                     </div>
                     <div className="flex items-center">
