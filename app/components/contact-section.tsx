@@ -34,16 +34,27 @@ export default function CTASection({ title, subtitle, buttonText, buttonLink }: 
     setIsSubmitting(true)
     setError("")
 
-    // Simulate form submission
     try {
-      await new Promise((resolve) => setTimeout(resolve, 1500))
-      setIsSubmitted(true)
-      setFormState({
-        name: "",
-        email: "",
-        subject: "",
-        message: "",
-      })
+      const response = await fetch("/api/send-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formState)
+      });
+
+      const result = await response.json();
+
+
+      if (result.success) {
+        setIsSubmitted(true)
+        setFormState({
+          name: "",
+          email: "",
+          subject: "",
+          message: "",
+        })
+      } else {
+        setError(result.error || "Hubo un error al enviar el formulario.");
+      }
     } catch (err) {
       setError("Hubo un error al enviar el formulario. Por favor, inténtalo de nuevo.")
     } finally {
@@ -54,6 +65,7 @@ export default function CTASection({ title, subtitle, buttonText, buttonLink }: 
   const resetForm = () => {
     setIsSubmitted(false)
   }
+
 
   const tInfo = websiteData.contact || {
     email: "info@maycamevolve.com",
