@@ -57,8 +57,17 @@ export default function Home() {
             </div>
           </FadeIn>
 
+          {/* 2_2. LINKEDIN SLIDER SECTION */}
           <script src="https://static.elfsight.com/platform/platform.js" async></script>
           <div className="elfsight-app-622032dd-25d1-4dfd-a3b8-b9efa4fb4faa" data-elfsight-app-lazy></div>
+          </div>
+
+          {/* 2_2. INSTAGRAM SLIDER SECTION */}
+          <div className="flex justify-center mt-4 w-full max-w-[1800px] mx-auto ">
+          <div className="w-full max-w-[1290px] mb-0 "> {/* Cambia el max-w-[900px] al mismo tamaño que el de LinkedIn */}
+          <script src="https://static.elfsight.com/platform/platform.js" async></script>
+          <div className="elfsight-app-845495eb-d958-403d-8d17-87a5d7d70ade" data-elfsight-app-lazy></div>
+          </div>
           </div>
 
           </section>
@@ -98,7 +107,7 @@ export default function Home() {
               <div className="space-y-6">
                 <p className="text-gray-300 text-lg leading-relaxed font-text">
                   {websiteData?.teamInfo?.description ||
-                    "Maycam Evolve es un equipo profesional de eSports fundado con la misión de revolucionar la escena competitiva. Nuestro enfoque se centra en el desarrollo de talento y la creación de una comunidad apasionada por los deportes electrónicos."}
+                    "Maycam Evolve es un equipo profesional de esports fundado con la misión de revolucionar la escena competitiva. Nuestro enfoque se centra en el desarrollo de talento y la creación de una comunidad apasionada por los deportes electrónicos."}
                 </p>
 
                 <div className="grid grid-cols-2 gap-4">
@@ -113,7 +122,7 @@ export default function Home() {
                     <h4 className="text-violet-400 font-bold mb-2 font-title">VISIÓN</h4>
                     <p className="text-gray-300 text-sm font-text">
                       {websiteData?.teamInfo?.vision?.substring(0, 100) + "..." ||
-                        "Ser reconocidos como el equipo de eSports líder, impulsando la profesionalización del sector..."}
+                        "Ser reconocidos como el equipo de esports líder, impulsando la profesionalización del sector..."}
                     </p>
                   </div>
                 </div>

@@ -77,7 +77,7 @@ export default function SobreNosotrosPage() {
                 </h2>
                 <div className="w-20 h-1 bg-violet-600 mb-8"></div>
                 <p className="text-gray-300 mb-6 font-text leading-relaxed">
-                  Maycam Evolve nació en 2018 con la visión de crear un equipo de eSports que no solo compitiera al más
+                  Maycam Evolve nació en 2018 con la visión de crear un equipo de esports que no solo compitiera al más
                   alto nivel, sino que también fomentara el desarrollo personal y profesional de sus jugadores.
                 </p>
                 <p className="text-gray-300 mb-6 font-text leading-relaxed">

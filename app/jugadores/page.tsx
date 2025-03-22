@@ -108,7 +108,7 @@ export default function PlayersPage() {
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-violet-500 to-violet-700 mx-auto mb-6"></div>
             <p className="text-gray-400 max-w-2xl mx-auto font-text">
-              Competimos en los juegos más populares y exigentes del panorama de los eSports
+              Competimos en los juegos más populares y exigentes del panorama de los esports
             </p>
           </motion.div>
 

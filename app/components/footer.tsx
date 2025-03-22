@@ -15,7 +15,7 @@ export default function Footer() {
   return (
     <footer className="w-full bg-black text-white p-8 text-center border-t border-gray-700">
       <div className="max-w-4xl mx-auto flex flex-col items-center">
-        <p className="text-lg font-semibold">&copy; {new Date().getFullYear()} eSports Team. Todos los derechos reservados.</p>
+        <p className="text-lg font-semibold">&copy; {new Date().getFullYear()} esports Team. Todos los derechos reservados.</p>
         <p className="text-sm mt-2 text-gray-400">Seguinos en nuestras redes sociales:</p>
         <div className="flex flex-wrap justify-center gap-4 mt-6">
           {socialLinks.map(({ name, icon: Icon, url }) => (

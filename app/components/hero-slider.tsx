@@ -53,7 +53,7 @@ export default function HeroSlider() {
             e.currentTarget.src = ""
           }}
         />
-        <div className="absolute inset-0 bg-black/60"></div>
+        <div className="absolute inset-0 bg-black/40"></div>
       </div>
 
       {/* Contenido encima de la imagen */}
@@ -65,7 +65,7 @@ export default function HeroSlider() {
           <div className="w-24 h-1 bg-violet-600 mx-auto mb-6"></div>
           <p className="text-gray-300 md:text-xl max-w-[800px] mx-auto font-text">
             {websiteData?.hero?.description ||
-              "Equipo profesional de eSports con presencia en los principales títulos competitivos"}
+              "Equipo profesional de esports con presencia en los principales títulos competitivos"}
           </p>
 
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">

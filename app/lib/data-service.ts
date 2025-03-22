@@ -10,7 +10,7 @@ export const websiteData = {
   },  
   hero: {
     title: "MAYCAM EVOLVE",
-    description: "Equipo profesional de eSports con mayor presencia en el mundo de los eSports ",
+    description: "Equipo profesional de esports con mayor presencia en el mundo de los esports ",
     buttonText: "Conoce al equipo",
     buttonUrl: "/sobre-nosotros",
     backgroundImages: [
@@ -29,20 +29,20 @@ export const websiteData = {
     name: "Maycam Evolve",
     slogan: "Evoluciona. Compite. Conquista.",
     description:
-      "Maycam Evolve es un equipo profesional de eSports fundado con la misión de revolucionar la escena competitiva. Nuestro enfoque se centra en el desarrollo de talento y la creación de una comunidad apasionada por los deportes electrónicos.",
+      "Maycam Evolve es un equipo profesional de esports fundado con la misión de revolucionar la escena competitiva. Nuestro enfoque se centra en el desarrollo de talento y la creación de una comunidad apasionada por los deportes electrónicos.",
     mission:
       "Desarrollar jugadores de élite y equipos competitivos que representen con orgullo nuestra marca en torneos nacionales e internacionales, fomentando valores como el trabajo en equipo, la disciplina y la excelencia.",
     vision:
-      "Ser reconocidos como el equipo de eSports líder, impulsando la profesionalización del sector y creando oportunidades para que los jugadores con talento puedan desarrollar carreras exitosas en los deportes electrónicos.",
+      "Ser reconocidos como el equipo de esports líder, impulsando la profesionalización del sector y creando oportunidades para que los jugadores con talento puedan desarrollar carreras exitosas en los deportes electrónicos.",
   },
   about: {
     title: "SOBRE NOSOTROS",
     description:
-      "Conoce la historia, valores y visión que impulsan a nuestro equipo a ser un referente en el mundo de los eSports.",
+      "Conoce la historia, valores y visión que impulsan a nuestro equipo a ser un referente en el mundo de los esports.",
     mission:
       "Desarrollar jugadores de élite y equipos competitivos que representen con orgullo nuestra marca en torneos nacionales e internacionales, fomentando valores como el trabajo en equipo, la disciplina y la excelencia.",
     vision:
-      "Ser reconocidos como el equipo de eSports líder, impulsando la profesionalización del sector y creando oportunidades para que los jugadores con talento puedan desarrollar carreras exitosas en los deportes electrónicos.",
+      "Ser reconocidos como el equipo de esports líder, impulsando la profesionalización del sector y creando oportunidades para que los jugadores con talento puedan desarrollar carreras exitosas en los deportes electrónicos.",
     backgroundImage: "/bg_photo/home_bg3.jpg",
     values: [
       {
@@ -62,7 +62,7 @@ export const websiteData = {
       },
       {
         title: "Pasión",
-        description: "La pasión por los eSports impulsa todo lo que hacemos.",
+        description: "La pasión por los esports impulsa todo lo que hacemos.",
         icon: "❤️",
       },
       {
@@ -368,7 +368,7 @@ export const websiteData = {
         },
         {
           id: "achievement10",
-          title: "Acuerdo histórico con el ENARD para impulsar los Esports 🎮🇦🇷",
+          title: "Acuerdo histórico con el ENARD para impulsar los esports 🎮🇦🇷",
           date: "2024-05-31",
           description: "El 31 de mayo firmamos un acuerdo con el ENARD, convirtiéndonos en patrocinadores oficiales del gaming para fomentar los deportes electrónicos entre atletas de disciplinas tradicionales. Con equipamiento exclusivo, capacitaciones y el apoyo de nuestros pro players, buscamos integrar los esports como una nueva forma de entrenamiento y dispersión en el CENARD.",
           tournament: "Acuerdo ENARD x Maycam Evolve",
@@ -388,16 +388,16 @@ export const websiteData = {
           id: "achievement8",
           title: "¡Top 3 en el Mundial de Dota 2 en Arabia! 🏆🔥",
           date: "2023-09-16",
-          description: "Nuestro equipo de Dota 2 clasificó al Mundial organizado por la Global Esports Federation en Arabia y logró un increíble 3° puesto en 2023. Un logro que nos llena de orgullo y sigue demostrando nuestro nivel en la escena internacional.",
-          tournament: "Mundial de Dota 2 – Global Esports Federation 2023",
+          description: "Nuestro equipo de Dota 2 clasificó al Mundial organizado por la Global ssports Federation en Arabia y logró un increíble 3° puesto en 2023. Un logro que nos llena de orgullo y sigue demostrando nuestro nivel en la escena internacional.",
+          tournament: "Mundial de Dota 2 – Global esports Federation 2023",
           prize: "",
           imageUrl: "/logros_photos/Logro-8.jpg"
         },
         {
           id: "achievement7",
-          title: "Los Esports hicieron historia en la Copa Davis 🎾🎮",
+          title: "Los esports hicieron historia en la Copa Davis 🎾🎮",
           date: "2023-08-26",
-          description: "Por primera vez, los #Esports estuvieron presentes en la Copa Davis, representando el futuro y la innovación en el deporte. Agradecemos a la prensa por dar visibilidad al mundo del #Gaming y por destacar este gran paso para la industria.",
+          description: "Por primera vez, los #esports estuvieron presentes en la Copa Davis, representando el futuro y la innovación en el deporte. Agradecemos a la prensa por dar visibilidad al mundo del #Gaming y por destacar este gran paso para la industria.",
           tournament: "Copa Davis",
           prize: "",
           imageUrl: "/logros_photos/Logro-7.jpg"
@@ -451,7 +451,7 @@ export const websiteData = {
           id: "achievement1",
           title: "Maycam Evolve en la SIM RACING WORLD CUP 2022",
           date: "2022-10-22",
-          description: "Dos pilotos argentinos compiten en la SIM RACING WORLD CUP 2022 de la International Esports Federation, buscando su lugar en las finales de octubre en Mónaco.",
+          description: "Dos pilotos argentinos compiten en la SIM RACING WORLD CUP 2022 de la International esports Federation, buscando su lugar en las finales de octubre en Mónaco.",
           tournament: "SIM RACING WORLD CUP 2022",
           prize: "",
           imageUrl: "/logros_photos/Logro-1.jpg"
