@@ -59,13 +59,13 @@ export default function HeroSlider() {
       {/* Contenido encima de la imagen */}
       <div className="container px-4 md:px-6 text-white relative z-10 h-full flex items-center">
         <div className="flex flex-col items-center justify-center text-center max-w-3xl mx-auto">
-          <h1 className="text-5xl font-bold tracking-tighter sm:text-6xl xl:text-7xl/none bg-gradient-to-r from-violet-400 to-violet-600 bg-clip-text text-transparent font-title mb-4">
+          <h1 className="text-5xl font-bold tracking-tighter sm:text-6xl xl:text-7xl/none bg-gradient-to-r text-white bg-clip-text text-transparent font-title mb-4 drop-shadow-lg">
             {websiteData?.hero?.title || "MAYCAM EVOLVE"}
           </h1>
           <div className="w-24 h-1 bg-violet-600 mx-auto mb-6"></div>
-          <p className="text-gray-300 md:text-xl max-w-[800px] mx-auto font-text">
+          <p className="text-white md:text-xl max-w-[800px] mx-auto font-text">
             {websiteData?.hero?.description ||
-              "Equipo profesional de esports con presencia en los principales títulos competitivos"}
+              "Equipo profesional de esports"}
           </p>
 
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">

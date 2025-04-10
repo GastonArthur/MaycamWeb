@@ -10,7 +10,7 @@ export const websiteData = {
   },  
   hero: {
     title: "MAYCAM EVOLVE",
-    description: "Equipo profesional de esports con mayor presencia en el mundo de los esports ",
+    description: "Equipo profesional de esports",
     buttonText: "Conoce al equipo",
     buttonUrl: "/sobre-nosotros",
     backgroundImages: [
