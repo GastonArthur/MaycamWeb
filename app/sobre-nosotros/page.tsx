@@ -104,7 +104,7 @@ export default function SobreNosotrosPage() {
                   <img
                     src={historyImage}
                     alt="Historia de Maycam Evolve"
-                    className="w-full h-full"
+                    className="w-full h-auto"
                     onError={(e) => e.currentTarget.remove()}
                   />
                 </div>
