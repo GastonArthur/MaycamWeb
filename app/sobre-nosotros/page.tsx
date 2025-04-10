@@ -6,7 +6,7 @@ import { websiteData } from "@/app/lib/data-service"
 export default function SobreNosotrosPage() {
   const aboutData = websiteData.about
   const values = aboutData.values || []
-  const historyImage = "../maycam_logo/LOGOMaycamCostura.webp"
+  const historyImage = "../maycam_logo/LOGOCostura.webp"
 
   // Validación de imagen de fondo
   const backgroundImage =
@@ -104,7 +104,7 @@ export default function SobreNosotrosPage() {
                   <img
                     src={historyImage}
                     alt="Historia de Maycam Evolve"
-                    className="w-full h-auto"
+                    className="w-full h-100%"
                     onError={(e) => e.currentTarget.remove()}
                   />
                 </div>
