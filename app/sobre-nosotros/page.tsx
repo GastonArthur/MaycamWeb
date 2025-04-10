@@ -6,7 +6,7 @@ import { websiteData } from "@/app/lib/data-service"
 export default function SobreNosotrosPage() {
   const aboutData = websiteData.about
   const values = aboutData.values || []
-  const historyImage = "../maycam_logo/LOGOMaycamCostura.png"
+  const historyImage = "../maycam_logo/LOGOMaycamCostura.webp"
 
   // Validación de imagen de fondo
   const backgroundImage =

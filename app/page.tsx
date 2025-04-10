@@ -28,11 +28,11 @@ export default function Home() {
   // Usar los datos del hero si están disponibles
   const heroImages = websiteData?.hero?.backgroundImages || [
     {
-      url: "/bg_photo/home_bg4.jpg",
+      url: "/bg_photo/home_bg4.webp",
       alt: "Maycam Evolve",
     },
     {
-      url: "/bg_photo/home_bg2.jpg",
+      url: "/bg_photo/home_bg2.webp",
       alt: "Equipo Profesional",
     },
   ]
@@ -87,7 +87,7 @@ export default function Home() {
             <SlideIn direction="left">
               <div className="relative h-[400px] overflow-hidden rounded-sm border border-violet-900">
                 <img
-                  src="/bg_photo/home_bg2.jpg"
+                  src="/bg_photo/home_bg2.webp"
                   alt="Equipo Maycam Evolve"
                   className="w-full h-full object-cover"
                 />
