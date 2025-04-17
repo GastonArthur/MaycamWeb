@@ -474,7 +474,7 @@ export const websiteData = {
     title: "CONTACTO",
     description: "Ponete en contacto con nosotros para cualquier consulta, propuesta o colaboración.",
     email: "hola@maycamevolve.com",
-    phone: "+",
+    phone: "NO DISPONIBLE",
     address: "Buenos Aires, Argentina",
     socialMedia: {
       twitter: "https://x.com/maycamevolve#",
@@ -485,7 +485,7 @@ export const websiteData = {
     },
     info: {
       email: "hola@maycamevolve.com",
-      phone: "+",
+      phone: "NO DISPONIBLE",
       address: "Buenos Aires, Argentina",
       socialMedia: {
         twitter: "https://x.com/maycamevolve#",

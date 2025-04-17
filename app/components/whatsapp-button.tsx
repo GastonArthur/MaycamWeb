@@ -7,7 +7,7 @@ export default function WhatsappButton() {
   const pathname = usePathname()
   const [isVisible, setIsVisible] = useState(false)
   const [isHovered, setIsHovered] = useState(false)
-  const phoneNumber = "5491159975193" // Número de teléfono sin espacios ni caracteres especiales
+  const phoneNumber = "" // Número de teléfono sin espacios ni caracteres especiales
 
   useEffect(() => {
     // No mostrar en rutas de administración
