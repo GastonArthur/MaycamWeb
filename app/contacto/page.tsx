@@ -77,9 +77,9 @@ export default function ContactPage() {
   }
 
   const contactInfo = websiteData.contact || {
-    email: "info@maycamevolve.com",
-    phone: "+34 123 456 789",
-    address: "Madrid, España",
+    email: "hola@maycamevolve.com",
+    phone: "",
+    address: "Buenos Aires, Argentina   ",
     socialMedia: {
       instagram: "https://instagram.com/maycamevolve",
       twitter: "https://twitter.com/maycamevolve",
