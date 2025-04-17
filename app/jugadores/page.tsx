@@ -50,7 +50,7 @@ export default function PlayersPage() {
             ref={heroRef}
             className="w-full h-[120%] bg-cover bg-center"
             style={{
-              backgroundImage: "url(/bg_photo/jugadores.webp)",
+              backgroundImage: "url(/bg_photo/jugadores.jpg)",
             }}
           >
             <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-black"></div>

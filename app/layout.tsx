@@ -21,7 +21,7 @@ export const metadata = {
     siteName: "Maycam Evolve",
     images: [
       {
-        url: "/LOGOMaycam.webp", // Imagen optimizada para compartir (1200x630)
+        url: "/LOGOMaycam.png", // Imagen optimizada para compartir (1200x630)
         width: 1200,
         height: 630,
         alt: "Maycam Evolve - Esports y Gaming Profesional",
@@ -35,7 +35,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Maycam Evolve | Esports y Gaming",
     description: "Únete al equipo profesional de esports que domina en FIFA y SimRacing. Evoluciona con nosotros.",
-    images: ["/LOGOMaycam.webp"], // 
+    images: ["/LOGOMaycam.png"], // 
     site: "@maycamevolve",
     creator: "@maycamevolve",
   }

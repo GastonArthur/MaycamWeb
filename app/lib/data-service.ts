@@ -15,11 +15,11 @@ export const websiteData = {
     buttonUrl: "/sobre-nosotros",
     backgroundImages: [
       {
-        image: "/bg_photo/home_bg4.webp",
+        image: "/bg_photo/home_bg4.jpg",
         alt: "Maycam Evolve",
       },
       {
-        image: "/bg_photo/home_bg2.webp",
+        image: "/bg_photo/home_bg2.jpg",
         alt: "Equipo Profesional",
       },
     ],
@@ -43,7 +43,7 @@ export const websiteData = {
       "Desarrollar jugadores de élite y equipos competitivos que representen con orgullo nuestra marca en torneos nacionales e internacionales, fomentando valores como el trabajo en equipo, la disciplina y la excelencia.",
     vision:
       "Ser reconocidos como el equipo de esports líder, impulsando la profesionalización del sector y creando oportunidades para que los jugadores con talento puedan desarrollar carreras exitosas en los deportes electrónicos.",
-    backgroundImage: "/bg_photo/home_bg3.webp",
+    backgroundImage: "/bg_photo/home_bg3.jpg",
     values: [
       {
         title: "Excelencia",
@@ -84,63 +84,63 @@ export const websiteData = {
       {
         id: "sponsor1",
         name: "Enard",
-        logo: "/sponsor_logo/Enard-Sponsor.webp",
+        logo: "/sponsor_logo/Enard-Sponsor.png",
         description: "Descripción del patrocinador 1",
         url: "https://enard.org.ar/",
       },
       {
         id: "sponsor2",
         name: "Gatorade",
-        logo: "/sponsor_logo/Gatorade-Sponsor.webp",
+        logo: "/sponsor_logo/Gatorade-Sponsor.png",
         description: "Descripción del patrocinador 2",
         url: "https://gatorade.lat/ar/",
       },
       {
         id: "sponsor3",
         name: "GGPoker",
-        logo: "/sponsor_logo/GGPoker-Sponsor.webp",
+        logo: "/sponsor_logo/GGPoker-Sponsor.png",
         description: "Descripción del patrocinador 3",
         url: "https://ggpoker.com/",
       },
       {
         id: "sponsor4",
         name: "JBL",
-        logo: "/sponsor_logo/JBLSponsor.webp",
+        logo: "/sponsor_logo/JBLSponsor.png",
         description: "Descripción del patrocinador 3",
         url: "https://www.jbl.com.ar/",
       },
       {
         id: "sponsor5",
         name: "MaycamGames",
-        logo: "/sponsor_logo/Maycam-Sponsor.webp",
+        logo: "/sponsor_logo/Maycam-Sponsor.png",
         description: "Descripción del patrocinador 3",
         url: "https://www.maycamgames.com.ar/",
       },
       {
         id: "sponsor6",
         name: "Rodo",
-        logo: "/sponsor_logo/Rodo-Sponsor.webp",
+        logo: "/sponsor_logo/Rodo-Sponsor.png",
         description: "Descripción del patrocinador 3",
         url: "https://www.rodo.com.ar/",
       },
       {
         id: "sponsor7",
         name: "Prex",
-        logo: "/sponsor_logo/Prex-Sponsor.webp",
+        logo: "/sponsor_logo/Prex-Sponsor.png",
         description: "Descripción del patrocinador 3",
         url: "https://www.prexcard.com.ar/",
       },
       {
         id: "sponsor8",
         name: "SanIgnacio",
-        logo: "/sponsor_logo/San-Ignacio.webp",
+        logo: "/sponsor_logo/San-Ignacio.png",
         description: "Descripción del patrocinador 3",
         url: "https://sanignacio.com.ar/",
       },
       {
         id: "sponsor9",
         name: "Seagate",
-        logo: "/sponsor_logo/Seagate-Sponsor.webp",
+        logo: "/sponsor_logo/Seagate-Sponsor.png",
         description: "Descripción del patrocinador 3",
         url: "https://www.seagate.com/",
       },
@@ -154,7 +154,7 @@ export const websiteData = {
         id: "staff2",
         name: "Juan Rodriguez",
         role: "Director Deportivo",
-        image: "/staff/Juan.webp",
+        image: "/staff/Juan.jpg",
         description: "Responsable del rendimiento competitivo del equipo, gestionando jugadores, entrenadores y estrategias de entrenamiento. Enfocado en scouting, análisis de desempeño y planificación deportiva para optimizar el desarrollo y éxito en torneos.",
         socialMedia: {
           twitter: "https://x.com/JuaanRP_",
@@ -166,7 +166,7 @@ export const websiteData = {
         id: "staff3",
         name: "Camila Rodriguez",
         role: "Creadora de contenido",
-        image: "/staff/Camila.webp",
+        image: "/staff/Camila.jpg",
         description: "Apasionada por el mundo digital, generando contenido atractivo y auténtico para conectar con la audiencia. Enfocada en entretenimiento, gaming y branding personal, creando videos, streams y publicaciones que potencian el engagement y el crecimiento en redes sociales.",
         socialMedia: {
           twitter: "https://x.com/rodcami_",
@@ -184,19 +184,19 @@ export const websiteData = {
       {
         id: "rainbowsix",
         name: "Rainbow Six",
-        image: "/games_photos/RAINBOW.webp",
+        image: "/games_photos/RAINBOW.jpg",
         description: "Nuestro equipo de Rainbow Six compite en los torneos más prestigiosos a nivel mundial.",
       },
       {
         id: "fifa",
         name: "FIFA",
-        image: "/games_photos/FIFA25.webp",
+        image: "/games_photos/FIFA25.jpg",
         description: "Nuestros jugadores profesionales de EA FC compiten al más alto nivel a través del circuito oficial de EA SPORTS",
       },
       {
         id: "simracing",
         name: "Simracing",
-        image: "/games_photos/F1.webp",
+        image: "/games_photos/F1.jpg",
         description: "Nuestros pilotos de Sim Racing llegan a su máxima velocidad en los campeonatos oficiales a nivel nacional e internacional",
       },
     ],
@@ -207,7 +207,7 @@ export const websiteData = {
         nickname: "JuaanRP_",
         gameId: "fifa",
         role: "Profesional de FIFA",
-        image: "/players_photo/fifa/Juan_Rodriguez.webp",
+        image: "/players_photo/fifa/Juan_Rodriguez.jpg",
         description: "Jugador profesional de FIFA con más de 5 años de experiencia competitiva.",
         socialMedia: {
           twitter: "https://x.com/JuaanRP_",
@@ -221,7 +221,7 @@ export const websiteData = {
         nickname: "MatyR29",
         gameId: "simracing",
         role: "Profesional de Sim Racing",
-        image: "/players_photo/simracing/Matias_Rossi.webp",
+        image: "/players_photo/simracing/Matias_Rossi.jpg",
         description: "Jugador profesional de Sim Racing con más de 5 años de experiencia competitiva.",
         socialMedia: {
           twitter: "#",
@@ -235,7 +235,7 @@ export const websiteData = {
         nickname: "Amariyo27",
         gameId: "simracing",
         role: "Profesional de Sim Racing",
-        image: "/players_photo/simracing/Thiago_Amari.webp",
+        image: "/players_photo/simracing/Thiago_Amari.jpg",
         description: "Jugador profesional de Sim Racing con más de 5 años de experiencia competitiva.",
         socialMedia: {
           twitter: "https://x.com/ThiagoAmari12",
@@ -249,7 +249,7 @@ export const websiteData = {
         nickname: "eV.hurbyz",
         gameId: "rainbowsix",
         role: "Profesional de Rainbow Six",
-        image: "/players_photo/rainbow/Bruno.webp",
+        image: "/players_photo/rainbow/Bruno.png",
         description: "Jugador profesional de Rainbow Six con más de 5 años de experiencia competitiva.",
         socialMedia: {
           twitter: "",
@@ -263,7 +263,7 @@ export const websiteData = {
         nickname: "eV.abridex",
         gameId: "rainbowsix",
         role: "Profesional de Rainbow Six",
-        image: "/players_photo/rainbow/Eduardo.webp",
+        image: "/players_photo/rainbow/Eduardo.png",
         description: "Jugador profesional de Rainbow Six con más de 5 años de experiencia competitiva.",
         socialMedia: {
           twitter: "",
@@ -277,7 +277,7 @@ export const websiteData = {
         nickname: "eV.derneka",
         gameId: "rainbowsix",
         role: "Profesional de Rainbow Six",
-        image: "/players_photo/rainbow/Gabriel.webp",
+        image: "/players_photo/rainbow/Gabriel.png",
         description: "Jugador profesional de Rainbow Six con más de 5 años de experiencia competitiva.",
         socialMedia: {
           twitter: "",
@@ -291,7 +291,7 @@ export const websiteData = {
         nickname: "eV.derneka",
         gameId: "rainbowsix",
         role: "Profesional de Rainbow Six",
-        image: "/players_photo/rainbow/Gabriel.webp",
+        image: "/players_photo/rainbow/Gabriel.png",
         description: "Jugador profesional de Rainbow Six con más de 5 años de experiencia competitiva.",
         socialMedia: {
           twitter: "",
@@ -305,7 +305,7 @@ export const websiteData = {
         nickname: "eV.zeno",
         gameId: "rainbowsix",
         role: "Profesional de Rainbow Six",
-        image: "/players_photo/rainbow/Joao.webp",
+        image: "/players_photo/rainbow/Joao.png",
         description: "Jugador profesional de Rainbow Six con más de 5 años de experiencia competitiva.",
         socialMedia: {
           twitter: "",
@@ -319,7 +319,7 @@ export const websiteData = {
         nickname: "eV.zluk",
         gameId: "rainbowsix",
         role: "Profesional de Rainbow Six",
-        image: "/players_photo/rainbow/Lucas.webp",
+        image: "/players_photo/rainbow/Lucas.png",
         description: "Jugador profesional de Rainbow Six con más de 5 años de experiencia competitiva.",
         socialMedia: {
           twitter: "",
@@ -333,7 +333,7 @@ export const websiteData = {
         nickname: "eV.Vnk",
         gameId: "rainbowsix",
         role: "Profesional de Rainbow Six",
-        image: "/players_photo/rainbow/Paulo.webp",
+        image: "/players_photo/rainbow/Paulo.png",
         description: "Jugador profesional de Rainbow Six con más de 5 años de experiencia competitiva.",
         socialMedia: {
           twitter: "",
@@ -355,7 +355,7 @@ export const websiteData = {
           description: "En nuestro debut en Mobile Legends: Bang Bang, nos consagramos campeones de la MPL 2024, torneo presencial organizado por MOONTON GAMES. Con esta victoria, aseguramos nuestra clasificación al Mundial de MLBB en Kuala Lumpur, Malasia. ¡Vamos por más!",
           tournament: "MPL 2024 - Clasificación al Mundial de MLBB",
           prize: "",
-          imageUrl: "/logros_photos/Logro-12.webp"
+          imageUrl: "/logros_photos/Logro-12.jpg"
         },
         {
           id: "achievement11",
@@ -364,7 +364,7 @@ export const websiteData = {
           description: "Nuestros pilotos de Sim Racing lograron la clasificación al evento presencial de The New Project (TNP) a través de la competencia del Super Turismo de Marcas, demostrando un gran nivel en 2024. ¡Vamos con todo a la próxima etapa!",
           tournament: "The New Project (TNP) – Super Turismo de Marcas 2024",
           prize: "",
-          imageUrl: "/logros_photos/Logro-11.webp"
+          imageUrl: "/logros_photos/Logro-11.jpg"
         },
         {
           id: "achievement10",
@@ -373,7 +373,7 @@ export const websiteData = {
           description: "El 31 de mayo firmamos un acuerdo con el ENARD, convirtiéndonos en patrocinadores oficiales del gaming para fomentar los deportes electrónicos entre atletas de disciplinas tradicionales. Con equipamiento exclusivo, capacitaciones y el apoyo de nuestros pro players, buscamos integrar los esports como una nueva forma de entrenamiento y dispersión en el CENARD.",
           tournament: "Acuerdo ENARD x Maycam Evolve",
           prize: "",
-          imageUrl: "/logros_photos/Logro-10.webp"
+          imageUrl: "/logros_photos/Logro-10.jpg"
         },
         {
           id: "achievement9",
@@ -382,7 +382,7 @@ export const websiteData = {
           description: "Nuestro equipo de Dota 2 logró la clasificación a los Juegos Panamericanos en Chile y alcanzó una increíble segunda posición en 2024. Un paso más en nuestra historia dentro de los esports internacionales.",
           tournament: "Juegos Panamericanos de Chile 2024",
           prize: "",
-          imageUrl: "/logros_photos/Logro-9.webp"
+          imageUrl: "/logros_photos/Logro-9.jpg"
         },
         {
           id: "achievement8",
@@ -391,7 +391,7 @@ export const websiteData = {
           description: "Nuestro equipo de Dota 2 clasificó al Mundial organizado por la Global ssports Federation en Arabia y logró un increíble 3° puesto en 2023. Un logro que nos llena de orgullo y sigue demostrando nuestro nivel en la escena internacional.",
           tournament: "Mundial de Dota 2 – Global esports Federation 2023",
           prize: "",
-          imageUrl: "/logros_photos/Logro-8.webp"
+          imageUrl: "/logros_photos/Logro-8.jpg"
         },
         {
           id: "achievement7",
@@ -400,7 +400,7 @@ export const websiteData = {
           description: "Por primera vez, los #esports estuvieron presentes en la Copa Davis, representando el futuro y la innovación en el deporte. Agradecemos a la prensa por dar visibilidad al mundo del #Gaming y por destacar este gran paso para la industria.",
           tournament: "Copa Davis",
           prize: "",
-          imageUrl: "/logros_photos/Logro-7.webp"
+          imageUrl: "/logros_photos/Logro-7.jpg"
         },
         {
           id: "achievement6",
@@ -409,7 +409,7 @@ export const websiteData = {
           description: "Daiana Gómez Parise y Juan Rodríguez Ponce representaron a Maycam Evolve en el Congreso Argentino de Deportes Urbanos, donde compartieron su experiencia y sumergieron a los oyentes en el apasionante mundo de los esports.",
           tournament: "Congreso Argentino de Deportes Urbanos",
           prize: "",
-          imageUrl: "/logros_photos/Logro-6.webp"
+          imageUrl: "/logros_photos/Logro-6.jpg"
         },
         {
           id: "achievement5",
@@ -418,7 +418,7 @@ export const websiteData = {
           description: "Una vez más, dijimos presente en la Universidad Argentina de la Empresa, participando de la jornada de #JuegosUADE y compartiendo nuestra pasión por los esports con la comunidad universitaria.",
           tournament: "Juegos UADE",
           prize: "",
-          imageUrl: "/logros_photos/Logro-5.webp"
+          imageUrl: "/logros_photos/Logro-5.jpg"
         },
         {
           id: "achievement4",
@@ -427,7 +427,7 @@ export const websiteData = {
           description: "Nuestro equipo ha asegurado su lugar en el torneo más importante del ecosistema Rainbow Six. En 2023, viajamos a São Paulo para competir contra los mejores del mundo y representar a nuestra comunidad en el escenario internacional.",
           tournament: "Six Invitational 2023",
           prize: "",
-          imageUrl: "/logros_photos/Logro-4.webp"
+          imageUrl: "/logros_photos/Logro-4.jpg"
         },
         {
           id: "achievement3",
@@ -436,7 +436,7 @@ export const websiteData = {
           description: "Dijimos presente en la Argentina FlowGamergy 2023 con un impresionante stand de más de 300m². Contamos con una cancha profesional de TeqBall, gradas, una diana de penales de 6 metros, un Tateti electrónico de Fox Sports, toro mecánico, puestos de pochoclos gratis, un mini estudio de Fox Sports con transmisiones en vivo, filmmakers editando en tiempo real y muchas sorpresas junto a nuestras marcas aliadas.",
           tournament: "Argentina FlowGamergy 2023",
           prize: "",
-          imageUrl: "/logros_photos/Logro-3.webp"
+          imageUrl: "/logros_photos/Logro-3.jpg"
         },
         {
           id: "achievement2",
@@ -445,7 +445,7 @@ export const websiteData = {
           description: "Estuvimos en la Argentina Game Show con un stand de temática mundialista, viviendo la pasión del gaming y el fútbol junto a nuestra comunidad.",
           tournament: "Argentina Game Show (AGS) 2022",
           prize: "",
-          imageUrl: "/logros_photos/Logro-2.webp"
+          imageUrl: "/logros_photos/Logro-2.jpg"
         },
         {
           id: "achievement1",
@@ -454,7 +454,7 @@ export const websiteData = {
           description: "Dos pilotos argentinos compiten en la SIM RACING WORLD CUP 2022 de la International esports Federation, buscando su lugar en las finales de octubre en Mónaco.",
           tournament: "SIM RACING WORLD CUP 2022",
           prize: "",
-          imageUrl: "/logros_photos/Logro-1.webp"
+          imageUrl: "/logros_photos/Logro-1.jpg"
         },
       ],
   },
