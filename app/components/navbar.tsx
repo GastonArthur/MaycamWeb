@@ -55,36 +55,54 @@ export default function Navbar() {
     <>
       <nav
         className={`w-full fixed top-0 left-0 z-40 transition-all duration-300 ${
-          scrolled ? "bg-black py-2 shadow-lg" : "bg-black py-4"
+          scrolled
+            ? "bg-gradient-to-r from-gray-900/95 via-gray-950/95 to-gray-900/95 backdrop-blur-md py-2 shadow-lg shadow-violet-900/20"
+            : "bg-gradient-to-r from-gray-900/80 via-gray-950/80 to-gray-900/80 backdrop-blur-sm py-4"
         }`}
       >
+        {/* Línea decorativa superior */}
+        <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-violet-500/40 to-transparent"></div>
+
+        {/* Elementos decorativos */}
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute -top-24 -right-24 w-64 h-64 bg-violet-600/10 rounded-full blur-[50px] opacity-80"></div>
+          <div className="absolute -bottom-24 -left-24 w-64 h-64 bg-indigo-600/10 rounded-full blur-[50px] opacity-80"></div>
+        </div>
+
         <div className="container mx-auto flex justify-between items-center px-4">
-          {/* Logo */}
-          <Link href="/" className="relative z-10">
+          {/* Logo con tamaño aumentado */}
+          <Link href="/" className="relative z-10 scale-125 transform-gpu origin-left">
             <NavbarLogo />
           </Link>
 
-          {/* Desktop Menu */}
-          <ul className="hidden md:flex items-center">
+          {/* Desktop Menu - Con barra pequeña en hover */}
+          <ul className="hidden md:flex items-center relative z-10">
             {routes.map((item) => (
               <li key={item.path} className="mx-1">
                 <Link
                   href={item.path}
-                  className={`px-4 py-2 ${isActive(item.path) ? "text-white" : "text-gray-300 hover:text-white"}`}
+                  className={`px-4 py-2 transition-all duration-300 relative group flex items-center ${
+                    isActive(item.path) ? "text-white" : "text-gray-300 hover:text-white"
+                  }`}
                 >
                   {item.label}
+                  {/* Barra para elemento activo */}
                   {isActive(item.path) && <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-violet-500" />}
+                  {/* Barra para hover (solo visible en hover y si no es el elemento activo) */}
+                  {!isActive(item.path) && (
+                    <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-violet-500/50 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+                  )}
                 </Link>
               </li>
             ))}
 
             {/* Separador visual */}
-            <div className="mx-3 h-6 w-px bg-gray-700"></div>
+            <div className="mx-3 h-6 w-px bg-gray-700/50"></div>
 
-            {/* Botón de tienda */}
+            {/* Botón de tienda con icono y estilo mejorado */}
             <li>
               <Link
-                className="inline-flex items-center px-4 py-2 bg-violet-600 rounded-lg text-white font-bold"
+                className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-violet-600 to-violet-800 hover:from-violet-700 hover:to-violet-900 rounded-lg text-white font-bold transition-all duration-300 shadow-lg shadow-violet-900/30 hover:shadow-violet-900/50 border border-violet-500/50 transform hover:-translate-y-0.5"
                 target="_blank"
                 href="https://www.maycamgames.com.ar"
               >
