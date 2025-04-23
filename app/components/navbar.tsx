@@ -1,70 +1,136 @@
-"use client";
+"use client"
 
-import { useState } from "react";
-import Link from "next/link";
-import NavbarLogo from "./navbar-logo";
-import { motion } from "framer-motion";
-import { Menu, X } from "lucide-react";
+import { useState, useEffect } from "react"
+import Link from "next/link"
+import { usePathname } from "next/navigation"
+import NavbarLogo from "./navbar-logo"
+import { Menu, X, ShoppingBag } from "lucide-react"
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
+  const pathname = usePathname()
 
   const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
+    setIsOpen(!isOpen)
+  }
+
+  // Detectar scroll para cambiar el estilo del navbar
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 20) {
+        setScrolled(true)
+      } else {
+        setScrolled(false)
+      }
+    }
+
+    window.addEventListener("scroll", handleScroll)
+    return () => {
+      window.removeEventListener("scroll", handleScroll)
+    }
+  }, [])
+
+  // Cerrar menú móvil al cambiar de ruta
+  useEffect(() => {
+    setIsOpen(false)
+  }, [pathname])
+
+  // Verificar si un enlace está activo
+  const isActive = (path: string) => {
+    return pathname === path
+  }
+
+  // Rutas para el menú
+  const routes = [
+    { path: "/", label: "Inicio" },
+    { path: "/sobre-nosotros", label: "Sobre Nosotros" },
+    { path: "/jugadores", label: "Jugadores" },
+    { path: "/staff", label: "Staff" },
+    { path: "/logros", label: "Logros" },
+    { path: "/contacto", label: "Contacto" },
+  ]
 
   return (
-    <nav className="w-full bg-black text-white p-4 fixed top-0 left-0 z-50">
-      <div className="container mx-auto flex justify-between items-center">
-        <Link href="/" className="text-2xl font-bold">
-          <NavbarLogo />
-        </Link>
+    <>
+      <nav
+        className={`w-full fixed top-0 left-0 z-40 transition-all duration-300 ${
+          scrolled ? "bg-black py-2 shadow-lg" : "bg-black py-4"
+        }`}
+      >
+        <div className="container mx-auto flex justify-between items-center px-4">
+          {/* Logo */}
+          <Link href="/" className="relative z-10">
+            <NavbarLogo />
+          </Link>
 
-        {/* Desktop Menu */}
-        <ul className="hidden md:flex space-x-6 text-sm font-semibold">
-          <li><Link href="/">Inicio</Link></li>
-          <li><Link href="/sobre-nosotros">Sobre Nosotros</Link></li>
-          <li><Link href="/jugadores">Jugadores</Link></li>
-          <li><Link href="/staff">Staff</Link></li>
-          <li><Link href="/logros">Logros</Link></li>
-          <li><Link href="/contacto">Contacto</Link></li>
-          <li><Link className="bg-purple-600 px-4 py-2 rounded text-white font-bold" target="_blank" href="https://www.maycamgames.com.ar">Tienda</Link></li>
-        </ul>
+          {/* Desktop Menu */}
+          <ul className="hidden md:flex items-center">
+            {routes.map((item) => (
+              <li key={item.path} className="mx-1">
+                <Link
+                  href={item.path}
+                  className={`px-4 py-2 ${isActive(item.path) ? "text-white" : "text-gray-300 hover:text-white"}`}
+                >
+                  {item.label}
+                  {isActive(item.path) && <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-violet-500" />}
+                </Link>
+              </li>
+            ))}
 
-        {/* Mobile Menu Button */}
-        <button
-          className="md:hidden focus:outline-none"
-          onClick={toggleMenu}
-          aria-label="Toggle menu"
-        >
-          {isOpen ? <X className="w-6 h-6 text-white" /> : <Menu className="w-6 h-6 text-white" />}
-        </button>
-      </div>
+            {/* Separador visual */}
+            <div className="mx-3 h-6 w-px bg-gray-700"></div>
 
-      {/* Mobile Menu */}
+            {/* Botón de tienda */}
+            <li>
+              <Link
+                className="inline-flex items-center px-4 py-2 bg-violet-600 rounded-lg text-white font-bold"
+                target="_blank"
+                href="https://www.maycamgames.com.ar"
+              >
+                <ShoppingBag className="mr-2 h-4 w-4" />
+                Tienda
+              </Link>
+            </li>
+          </ul>
+
+          {/* Mobile Menu Button */}
+          <button className="md:hidden focus:outline-none z-50 p-2" onClick={toggleMenu} aria-label="Toggle menu">
+            {isOpen ? <X className="w-6 h-6 text-white" /> : <Menu className="w-6 h-6 text-white" />}
+          </button>
+        </div>
+      </nav>
+
+      {/* Mobile Menu - Extremadamente simple */}
       {isOpen && (
-        <motion.div
-          initial={{ x: "100%" }}
-          animate={{ x: 0 }}
-          exit={{ x: "100%" }}
-          transition={{ type: "spring", stiffness: 100, damping: 15 }}
-          className="fixed top-0 right-0 w-3/4 h-full bg-black bg-opacity-90 backdrop-blur-md z-40 md:hidden rounded-l-xl"
-          onClick={(e) => e.stopPropagation()} // Evita que se cierre al hacer clic dentro del menú
-        >
-          <div className="flex flex-col items-center justify-center min-h-full space-y-4 py-6">
-            <Link href="/" onClick={toggleMenu} className="text-xl font-semibold">Inicio</Link>
-            <Link href="/sobre-nosotros" onClick={toggleMenu} className="text-xl font-semibold">Sobre Nosotros</Link>
-            <Link href="/jugadores" onClick={toggleMenu} className="text-xl font-semibold">Jugadores</Link>
-            <Link href="/staff" onClick={toggleMenu} className="text-xl font-semibold">Staff</Link>
-            <Link href="/logros" onClick={toggleMenu} className="text-xl font-semibold">Logros</Link>
-            <Link href="/contacto" onClick={toggleMenu} className="text-xl font-semibold">Contacto</Link>
-            <Link href="https://www.maycamgames.com.ar" target="_blank" onClick={toggleMenu} className="bg-purple-600 px-4 py-2 rounded text-white font-bold">Tienda</Link>
-          </div>
-        </motion.div>
-      )}
+        <div className="fixed inset-0 bg-black z-50 md:hidden" style={{ top: "60px" }}>
+          <div className="flex flex-col p-4">
+            {routes.map((item) => (
+              <Link
+                key={item.path}
+                href={item.path}
+                onClick={toggleMenu}
+                className={`py-4 text-center text-xl font-bold ${
+                  isActive(item.path) ? "text-violet-400" : "text-white"
+                }`}
+              >
+                {item.label}
+              </Link>
+            ))}
 
-      {/* Click Outside to Close */}
-      {isOpen && <div className="fixed inset-0 z-30" onClick={toggleMenu} />}  
-    </nav>
-  );
+            <div className="mt-6 pt-6 border-t border-gray-800">
+              <Link
+                href="https://www.maycamgames.com.ar"
+                target="_blank"
+                onClick={toggleMenu}
+                className="block w-full py-4 bg-violet-600 text-white text-center text-xl font-bold rounded-lg"
+              >
+                Tienda
+              </Link>
+            </div>
+          </div>
+        </div>
+      )}
+    </>
+  )
 }
