@@ -6,7 +6,7 @@ export const websiteData = {
  logo: {
     type: "image",
     text: "MAYCAM EVOLVE",
-    image: "../maycam_logo/LOGOCosturas1.png",
+    image: "../maycam_logo/LOGOMaycam.png",
   },  
   hero: {
     title: "MAYCAM EVOLVE",
