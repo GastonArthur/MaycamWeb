@@ -208,7 +208,7 @@ export const websiteData = {
         gameId: "fifa",
         role: "Profesional de FIFA",
         image: "/players_photo/fifa/Juan_Rodriguez.jpg",
-        description: "Jugador profesional de FIFA con más de 5 años de experiencia competitiva.",
+        description: "Referente en FIFA, con una mentalidad competitiva y estratégica que marca la diferencia en cada torneo.",
         socialMedia: {
           twitter: "https://x.com/JuaanRP_",
           instagram: "https://www.instagram.com/juanrpx_/",
@@ -222,7 +222,7 @@ export const websiteData = {
         gameId: "simracing",
         role: "Profesional de Sim Racing",
         image: "/players_photo/simracing/Matias_Rossi.jpg",
-        description: "Jugador profesional de Sim Racing con más de 5 años de experiencia competitiva.",
+        description: "Especialista en Sim Racing, apasionado por los motores y la precisión al volante, siempre buscando superar sus límites.",
         socialMedia: {
           twitter: "#",
           instagram: "#",
@@ -236,7 +236,7 @@ export const websiteData = {
         gameId: "simracing",
         role: "Profesional de Sim Racing",
         image: "/players_photo/simracing/MatiasGil.jpg",
-        description: "Jugador profesional de Sim Racing con más de 5 años de experiencia competitiva.",
+        description: "Amante de la velocidad y la competencia. Su constancia en Sim Racing lo convierte en un piloto sólido y confiable.",
         socialMedia: {
           instagram: "https://www.instagram.com/Matias_gil92",
         },
@@ -248,7 +248,7 @@ export const websiteData = {
           gameId: "simracing",
           role: "Profesional de Sim Racing",
           image: "/players_photo/simracing/Thiago_Amari.jpg",
-          description: "Jugador profesional de Sim Racing con más de 5 años de experiencia competitiva.",
+          description: "Piloto de Sim Racing con una gran capacidad de adaptación y lectura de carrera, destacándose por su enfoque y dedicación.",
           socialMedia: {
             twitter: "https://x.com/ThiagoAmari12",
             instagram: "https://www.instagram.com/thiago.amari/",
@@ -262,7 +262,7 @@ export const websiteData = {
         gameId: "rainbowsix",
         role: "Profesional de Rainbow Six",
         image: "/players_photo/rainbow/Bruno.png",
-        description: "Jugador profesional de Rainbow Six con más de 5 años de experiencia competitiva.",
+        description: "Jugador de Rainbow Six, con una mente táctica y frialdad en las situaciones más intensas, siempre listo para liderar.",
         socialMedia: {
           twitter: "",
           instagram: "",
@@ -276,7 +276,7 @@ export const websiteData = {
         gameId: "rainbowsix",
         role: "Profesional de Rainbow Six",
         image: "/players_photo/rainbow/Eduardo.png",
-        description: "Jugador profesional de Rainbow Six con más de 5 años de experiencia competitiva.",
+        description: "Meticuloso y estratégico, con una visión de juego que aporta inteligencia y control en cada partida.",
         socialMedia: {
           twitter: "",
           instagram: "",
@@ -290,7 +290,7 @@ export const websiteData = {
         gameId: "rainbowsix",
         role: "Profesional de Rainbow Six",
         image: "/players_photo/rainbow/Gabriel.png",
-        description: "Jugador profesional de Rainbow Six con más de 5 años de experiencia competitiva.",
+        description: "Fuerte en la toma de decisiones y con excelente coordinación de equipo, pieza clave dentro de las filas de Rainbow Six.",
         socialMedia: {
           twitter: "",
           instagram: "",
@@ -299,12 +299,12 @@ export const websiteData = {
       },
       {
         id: "player8",
-        name: "Gabriel",
-        nickname: "eV.derneka",
+        name: "Joao",
+        nickname: "eV.zeno",
         gameId: "rainbowsix",
         role: "Profesional de Rainbow Six",
-        image: "/players_photo/rainbow/Gabriel.png",
-        description: "Jugador profesional de Rainbow Six con más de 5 años de experiencia competitiva.",
+        image: "/players_photo/rainbow/Joao.png",
+        description: "Jugador de Rainbow Six con gran reflejo y agilidad mental, siempre preparado para reaccionar ante cualquier desafío.",
         socialMedia: {
           twitter: "",
           instagram: "",
@@ -313,12 +313,12 @@ export const websiteData = {
       },
       {
         id: "player9",
-        name: "Joao",
-        nickname: "eV.zeno",
+        name: "Lucas",
+        nickname: "eV.zluk",
         gameId: "rainbowsix",
         role: "Profesional de Rainbow Six",
-        image: "/players_photo/rainbow/Joao.png",
-        description: "Jugador profesional de Rainbow Six con más de 5 años de experiencia competitiva.",
+        image: "/players_photo/rainbow/Lucas.png",
+        description: "Con sangre fría y precisión quirúrgica, es el jugador que asegura los momentos más críticos en el equipo.",
         socialMedia: {
           twitter: "",
           instagram: "",
@@ -327,26 +327,12 @@ export const websiteData = {
       },
       {
         id: "player10",
-        name: "Lucas",
-        nickname: "eV.zluk",
-        gameId: "rainbowsix",
-        role: "Profesional de Rainbow Six",
-        image: "/players_photo/rainbow/Lucas.png",
-        description: "Jugador profesional de Rainbow Six con más de 5 años de experiencia competitiva.",
-        socialMedia: {
-          twitter: "",
-          instagram: "",
-          Linkedin: "",
-        },
-      },
-      {
-        id: "player11",
         name: "Paulo",
         nickname: "eV.Vnk",
         gameId: "rainbowsix",
         role: "Profesional de Rainbow Six",
         image: "/players_photo/rainbow/Paulo.png",
-        description: "Jugador profesional de Rainbow Six con más de 5 años de experiencia competitiva.",
+        description: "Jugador de Rainbow Six con enfoque en el trabajo en equipo y comunicación efectiva, aportando solidez y compromiso.",
         socialMedia: {
           twitter: "",
           instagram: "",
