@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { Trophy, Calendar, X, Award } from "lucide-react"
+import { Trophy, Calendar, X, Award, Star } from "lucide-react"
 import { websiteData } from "@/app/lib/data-service"
 import { HeroSection } from "@/app/components/ui/hero-section"
 import { motion, AnimatePresence } from "framer-motion"
@@ -90,7 +90,7 @@ export default function AchievementsPage() {
                     {/* Renderizar imagen solo si `imageUrl` existe y no tiene error */}
                     {achievement.imageUrl && !imageErrors[achievement.id] && (
                       <motion.div
-                        className="relative aspect-video overflow-hidden rounded-2xl cursor-pointer group shadow-[0_0_25px_-5px_rgba(124,58,237,0.2)]"
+                        className="relative aspect-video overflow-hidden rounded-2xl cursor-pointer group shadow-[0_0_30px_-5px_rgba(124,58,237,0.3)] hover:shadow-[0_0_40px_-5px_rgba(124,58,237,0.4)] transition-shadow duration-500"
                         whileHover={{ y: -8, transition: { duration: 0.2 } }}
                         onClick={() => setSelectedAchievement(achievement)}
                       >
@@ -104,10 +104,17 @@ export default function AchievementsPage() {
 
                         {/* Overlay con icono al hacer hover */}
                         <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                          <div className="bg-violet-600/40 backdrop-blur-sm p-4 rounded-full">
+                          <div className="bg-violet-600/40 backdrop-blur-sm p-4 rounded-full transform scale-0 group-hover:scale-100 transition-transform duration-300">
                             <Award className="h-8 w-8 text-white" />
                           </div>
                         </div>
+
+                        {/* Badge de año */}
+                        {achievement.date && (
+                          <div className="absolute top-3 left-3 bg-violet-800/80 backdrop-blur-sm px-3 py-1 text-xs text-white rounded-full font-medium border border-violet-500/30 shadow-lg shadow-violet-900/20">
+                            {new Date(achievement.date).getFullYear()}
+                          </div>
+                        )}
                       </motion.div>
                     )}
                   </div>
@@ -119,10 +126,10 @@ export default function AchievementsPage() {
                     }`}
                   >
                     <motion.div
-                      className="bg-gradient-to-br from-gray-800/70 via-gray-850/70 to-gray-900/70 rounded-2xl p-7 transition-all duration-300 cursor-pointer relative overflow-hidden shadow-[0_10px_40px_-15px_rgba(124,58,237,0.25)] backdrop-blur-sm"
+                      className="bg-gradient-to-br from-gray-800/60 via-gray-800/70 to-gray-900/80 rounded-2xl p-7 transition-all duration-300 cursor-pointer relative overflow-hidden shadow-[0_10px_40px_-15px_rgba(124,58,237,0.3)] backdrop-blur-sm border border-violet-500/10 hover:border-violet-500/30"
                       whileHover={{
                         scale: 1.02,
-                        boxShadow: "0 15px 50px -12px rgba(124,58,237,0.3)",
+                        boxShadow: "0 15px 50px -12px rgba(124,58,237,0.4)",
                       }}
                       onClick={() => setSelectedAchievement(achievement)}
                     >
@@ -133,7 +140,12 @@ export default function AchievementsPage() {
                       <div className="absolute -top-10 -right-10 w-20 h-20 bg-violet-500/15 rounded-full blur-2xl pointer-events-none"></div>
                       <div className="absolute -bottom-10 -left-10 w-20 h-20 bg-indigo-500/15 rounded-full blur-2xl pointer-events-none"></div>
 
-                      <div className="text-xl font-bold text-white mb-3">{achievement.title}</div>
+                      {/* Elemento decorativo adicional */}
+                      <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-violet-600/10 to-transparent pointer-events-none rounded-br-2xl"></div>
+
+                      <div className="text-xl font-bold text-white mb-3 group-hover:text-violet-200 transition-colors">
+                        {achievement.title}
+                      </div>
                       {achievement.date && (
                         <div
                           className={`flex items-center text-sm text-violet-200 mb-3 ${
@@ -171,7 +183,7 @@ export default function AchievementsPage() {
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.9 }}
               transition={{ type: "spring", damping: 25 }}
-              className="bg-gradient-to-br from-gray-800/90 via-gray-850/90 to-gray-900/95 rounded-2xl overflow-hidden w-full max-w-4xl max-h-[90vh] overflow-y-auto relative shadow-[0_20px_60px_-15px_rgba(124,58,237,0.3)]"
+              className="bg-gradient-to-br from-gray-800/90 via-gray-850/90 to-gray-900/95 rounded-2xl overflow-hidden w-full max-w-4xl max-h-[90vh] overflow-y-auto relative shadow-[0_20px_60px_-15px_rgba(124,58,237,0.4)] border border-violet-500/20"
               onClick={(e) => e.stopPropagation()}
             >
               {/* Borde brillante */}
@@ -181,13 +193,16 @@ export default function AchievementsPage() {
               <div className="absolute top-0 right-0 w-40 h-40 bg-violet-500/15 rounded-full blur-3xl pointer-events-none"></div>
               <div className="absolute bottom-0 left-0 w-40 h-40 bg-indigo-500/15 rounded-full blur-3xl pointer-events-none"></div>
 
+              {/* Elemento decorativo adicional */}
+              <div className="absolute top-0 right-0 w-full h-full bg-[radial-gradient(circle_at_top_right,rgba(124,58,237,0.1),transparent_70%)] pointer-events-none"></div>
+
               <div className="relative">
                 <button
                   onClick={(e) => {
                     e.stopPropagation()
                     setSelectedAchievement(null)
                   }}
-                  className="absolute top-4 right-4 bg-gray-800/70 p-2 rounded-full text-white hover:bg-violet-600 transition-colors z-20 backdrop-blur-sm"
+                  className="absolute top-4 right-4 bg-gray-800/70 p-2 rounded-full text-white hover:bg-violet-600 transition-colors z-20 backdrop-blur-sm border border-violet-500/20"
                 >
                   <X className="h-5 w-5" />
                 </button>
@@ -201,12 +216,20 @@ export default function AchievementsPage() {
                       onError={() => handleImageError(selectedAchievement.id)}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/70 to-transparent"></div>
+
+                    {/* Badge de año en la imagen */}
+                    {selectedAchievement.date && (
+                      <div className="absolute top-4 left-4 bg-violet-800/80 backdrop-blur-sm px-4 py-1 text-sm text-white rounded-full font-medium border border-violet-500/30 shadow-lg shadow-violet-900/20 flex items-center">
+                        <Calendar className="h-4 w-4 mr-2 text-violet-300" />
+                        {new Date(selectedAchievement.date).getFullYear()}
+                      </div>
+                    )}
                   </div>
                 )}
 
                 <div className="p-8">
                   <div className="flex items-start gap-4 mb-6">
-                    <div className="bg-violet-500/20 p-3 rounded-xl">
+                    <div className="bg-gradient-to-br from-violet-600/30 to-violet-800/30 p-3 rounded-xl border border-violet-500/20 shadow-lg shadow-violet-900/10">
                       <Trophy className="h-6 w-6 text-violet-200" />
                     </div>
                     <div>
@@ -220,8 +243,21 @@ export default function AchievementsPage() {
                     </div>
                   </div>
 
+                  {/* Calificación o importancia */}
+                  <div className="flex items-center mb-6">
+                    <div className="flex items-center">
+                      {[1, 2, 3, 4, 5].map((star) => (
+                        <Star
+                          key={star}
+                          className={`h-5 w-5 ${star <= 4 ? "text-violet-500 fill-violet-500" : "text-gray-600"}`}
+                        />
+                      ))}
+                    </div>
+                    <span className="ml-2 text-sm text-gray-400">Logro destacado</span>
+                  </div>
+
                   {selectedAchievement.description && (
-                    <div className="bg-violet-500/10 rounded-xl p-6 backdrop-blur-sm border border-violet-500/20">
+                    <div className="bg-gradient-to-br from-violet-900/10 to-violet-800/5 rounded-xl p-6 backdrop-blur-sm border border-violet-500/20 shadow-inner shadow-violet-900/5">
                       <p className="text-gray-200 leading-relaxed">{selectedAchievement.description}</p>
                     </div>
                   )}
