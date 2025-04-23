@@ -151,7 +151,7 @@ export const websiteData = {
     description: "El equipo detrás del equipo que hace posible nuestro éxito.",
     staffMembers: [
       {
-        id: "staff2",
+        id: "staff1",
         name: "Juan Rodriguez",
         role: "Director Deportivo",
         image: "/staff/Juan.jpg",
@@ -163,9 +163,9 @@ export const websiteData = {
         },
       },
       {
-        id: "staff3",
+        id: "staff2",
         name: "Camila Rodriguez",
-        role: "Creadora de contenido",
+        role: "Brand Manager",
         image: "/staff/Camila.jpg",
         description: "Apasionada por el mundo digital, generando contenido atractivo y auténtico para conectar con la audiencia. Enfocada en entretenimiento, gaming y branding personal, creando videos, streams y publicaciones que potencian el engagement y el crecimiento en redes sociales.",
         socialMedia: {
