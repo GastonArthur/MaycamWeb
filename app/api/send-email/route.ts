@@ -24,7 +24,7 @@ export async function POST(request: Request) {
         // 2. Enviar email a la empresa con todos los datos
         await resend.emails.send({
             from: 'onboarding@resend.dev',  // Dirección que tienes autorizada en Resend
-            to: 'hola@maycamevolve.com',     // Dirección de tu empresa
+            to: 'marketing@maycamevolve.com',     // Dirección de tu empresa
             subject: subject || `Nuevo mensaje de ${name}`,
             react: EmailTemplateForCompany({ name, email, message, subject }) as React.ReactElement,
         });

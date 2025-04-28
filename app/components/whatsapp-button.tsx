@@ -19,7 +19,7 @@ export default function WhatsappButton() {
 
   return (
     <a
-      href={`https://wa.me/${phoneNumber}`}
+      href={`https://wa.me/541159975193?text=Buenas,%20quiero%20hacer%20una%20consulta%20sobre...`}
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-4 right-4 z-50 flex items-center justify-center w-14 h-14 rounded-full bg-green-500 text-white shadow-lg hover:bg-green-600 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-offset-2 focus:ring-offset-background"

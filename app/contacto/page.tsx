@@ -73,8 +73,8 @@ export default function ContactPage() {
   }
 
   const contactInfo = websiteData.contact || {
-    email: "hola@maycamevolve.com",
-    phone: "",
+    email: "marketing@maycamevolve.com",
+    phone: "+54 9 1159975193",
     address: "Buenos Aires, Argentina   ",
     socialMedia: {
       instagram: "https://instagram.com/maycamevolve",
@@ -214,7 +214,7 @@ export default function ContactPage() {
                             href={`tel:${contactInfo.phone}`}
                             className="text-white hover:text-violet-400 transition-colors"
                           >
-                            {contactInfo.phone || "No disponible"}
+                            {contactInfo.phone || "+54 9 1159975193"}
                           </a>
                         </div>
                       </div>

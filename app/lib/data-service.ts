@@ -459,8 +459,8 @@ export const websiteData = {
   contact: {
     title: "CONTACTO",
     description: "Ponete en contacto con nosotros para cualquier consulta, propuesta o colaboración.",
-    email: "hola@maycamevolve.com",
-    phone: "NO DISPONIBLE",
+    email: "marketing@maycamevolve.com",
+    phone: "+54 9 1159975193",
     address: "Buenos Aires, Argentina",
     socialMedia: {
       twitter: "https://x.com/maycamevolve#",
@@ -470,8 +470,8 @@ export const websiteData = {
       twitch: "https://twitch.tv/maycamevolve",
     },
     info: {
-      email: "hola@maycamevolve.com",
-      phone: "NO DISPONIBLE",
+      email: "marketing@maycamevolve.com",
+      phone: "+54 9 1159975193",
       address: "Buenos Aires, Argentina",
       socialMedia: {
         twitter: "https://x.com/maycamevolve#",

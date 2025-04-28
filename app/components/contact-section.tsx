@@ -68,8 +68,8 @@ export default function CTASection({ title, subtitle, buttonText, buttonLink }: 
 
 
   const tInfo = websiteData.contact || {
-    email: "hola@maycamevolve.com",
-    phone: "NO DISPONIBLE",
+    email: "marketing@maycamevolve.com",
+    phone: "+54 9 1159975193",
     address: "Buenos Aires, Argentina",
     socialMedia: {
       instagram: "https://instagram.com/maycamevolve",
