@@ -235,7 +235,7 @@ export const websiteData = {
         nickname: "Matias_gil92",
         gameId: "simracing",
         role: "Profesional de Sim Racing",
-        image: "/players_photo/simracing/MatiasGil.jpg",
+        image: "/players_photo/simracing/MatiasGil.png",
         description: "Amante de la velocidad y la competencia. Su constancia en Sim Racing lo convierte en un piloto sólido y confiable.",
         socialMedia: {
           instagram: "https://www.instagram.com/Matias_gil92",
