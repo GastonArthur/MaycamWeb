@@ -207,7 +207,7 @@ export const websiteData = {
         nickname: "JuaanRP_",
         gameId: "fifa",
         role: "Profesional de FIFA",
-        image: "/players_photo/fifa/Juan_Rodriguez.jpg",
+        image: "/players_photo/fifa/Juan_Rodriguez.png",
         description: "Referente en FIFA, con una mentalidad competitiva y estratégica que marca la diferencia en cada torneo.",
         socialMedia: {
           twitter: "https://x.com/JuaanRP_",
@@ -221,7 +221,7 @@ export const websiteData = {
         nickname: "MatyR29",
         gameId: "simracing",
         role: "Profesional de Sim Racing",
-        image: "/players_photo/simracing/Matias_Rossi.jpg",
+        image: "/players_photo/simracing/Mati_Rossi.png",
         description: "Especialista en Sim Racing, apasionado por los motores y la precisión al volante, siempre buscando superar sus límites.",
         socialMedia: {
           twitter: "#",
@@ -247,7 +247,7 @@ export const websiteData = {
           nickname: "Amariyo27",
           gameId: "simracing",
           role: "Profesional de Sim Racing",
-          image: "/players_photo/simracing/Thiago_Amari.jpg",
+          image: "/players_photo/simracing/Thiago_Amari.png",
           description: "Piloto de Sim Racing con una gran capacidad de adaptación y lectura de carrera, destacándose por su enfoque y dedicación.",
           socialMedia: {
             twitter: "https://x.com/ThiagoAmari12",
